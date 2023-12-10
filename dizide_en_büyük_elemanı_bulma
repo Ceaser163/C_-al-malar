@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+      int i,j,max;
+      int sayilar[4];
+      
+      for(i=0;i<5;i++)
+      {
+	  printf("sayilari giriniz: ");
+      scanf("%d",&sayilar[i]);
+      }
+      
+      max=sayilar[0];
+      for(j=0;j<4;++j)
+      {
+       	if(max<sayilar[j])
+	  {
+      	  max=sayilar[j];
+	}
+    }
+      
+      printf("en buyuk sayi: %d",max);
+      
+      return 0;
+}

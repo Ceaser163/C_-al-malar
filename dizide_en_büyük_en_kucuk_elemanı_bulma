@@ -3,7 +3,7 @@
 
 int main()
 {
-      int i,j,max;
+      int i,j,k,max,min;
       int sayilar[4];
       
       for(i=0;i<5;i++)
@@ -11,7 +11,7 @@ int main()
 	  printf("sayilari giriniz: ");
       scanf("%d",&sayilar[i]);
       }
-      
+      min=sayilar[0];
       max=sayilar[0];
       for(j=0;j<4;++j)
       {
@@ -20,8 +20,15 @@ int main()
       	  max=sayilar[j];
 	}
     }
+      for(k=0;k<4;++k)
+	{
+      	if(min>sayilar[k])
+	{
+      	min=sayilar[k];	
+	}
+    }
       
-      printf("en buyuk sayi: %d",max);
-      
+      printf("en buyuk sayi: %d/n",max);
+      printf("en kucuk sayi: %d",min);
       return 0;
 }

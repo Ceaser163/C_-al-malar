@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	
+	int a,b,k;
+	int tabanalani,yanal_alan,toplam_alan,hacmi;
+	
+	printf("Lutfen Prizmanın kenarları ve yuksekligini giriniz: ");
+	scanf("%d%d%d",&a,&b,&k);
+	
+	tabanalani=a*b;
+	yanal_alan=k+k(a+b);
+	toplam_alan=2*tabanalani+yanal_alan;
+	hacmi=a*b*k;
+	
+	
+	printf("Taban alani: %d - Yanal alani: %d - Toplam alan: %d - Hacim: %d",tabanalani,yanal_alan,toplam_alan,hacmi);
+	
+	return 0;
+}

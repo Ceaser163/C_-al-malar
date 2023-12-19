@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	
+	char k;
+	
+	printf("Harf giriniz: ");
+	scanf("%c",&k);
+	
+	if(k>='A' && k<='Z')
+	{
+		printf("girdiginiz harf buyuktur. --%c",k);
+	}
+	else 
+	{
+		printf("girdiginiz harf kucuk harftir.--%c",k);
+	}
+	
+	return 0;
+}
